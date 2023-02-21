@@ -5,15 +5,15 @@ on:
   branches: 
     - main   
         
-env:  
+env: 
  DOCKER_HUB_USERNAME: ${{ secrets.DOCKER_HUB_USERNAME }} 
  DOCKER_HUB_PASSWORD: ${{ secrets.DOCKER_HUB_PASSWORD }} 
  
-jobs: 
+jobs:
  build-and-push: 
-  runs-on: ubuntu-latest    
+  runs-on: ubuntu-latest
   steps:      
-   - name: Checkout code       
+   - name: Checkout code
      uses: actions/checkout@v2      
 	 
    - name: Login to Docker Hub        
