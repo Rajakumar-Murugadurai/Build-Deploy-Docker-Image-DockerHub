@@ -1,9 +1,9 @@
 name: Build and push Docker image
 
 on: 
- push:    
-  branches:  
-   - main 
+  push:    
+    branches:  
+      - main 
   
 env:  
  DOCKER_HUB_USERNAME: ${{ secrets.DOCKER_HUB_USERNAME }} 
